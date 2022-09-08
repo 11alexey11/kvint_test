@@ -13,7 +13,22 @@
     box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
     -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
-        
+
+    &.appear {
+        animation: appearance 0.5s;
+        -webkit-animation: appearance 0.5s;
+        -moz-animation: appearance 0.5s;
+        -o-animation: appearance 0.5s;
+    }
+    
+
+    &.disappear {
+        animation: disappearance 0.5s;
+        -webkit-animation: disappearance 0.5s;
+        -moz-animation: disappearance 0.5s;
+        -o-animation: disappearance 0.5s;
+    }
+    
 
     &:hover {
         cursor: pointer;
@@ -31,4 +46,38 @@
         left: 0;
         content: url('../../assets/img/turn_off.svg');
     }
+}
+
+@keyframes appearance {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@-webkit-keyframes appearance {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@-moz-keyframes appearance {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@-o-keyframes appearance {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes disappearance {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+@-webkit-keyframes disappearance {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+@-moz-keyframes disappearance {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+@-o-keyframes disappearance {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
 }
