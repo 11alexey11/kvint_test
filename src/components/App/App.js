@@ -1,9 +1,13 @@
-import './index.css';
+import './index.scss';
 
-function App() {
-  return (
-    <h1>Я тут</h1>
-  );
+const App = () => {
+	return (
+		<div className='container'>
+			<button className='btn'>
+				<span>Click me!</span>
+			</button>
+		</div>
+	);
 }
 
 export default App;
