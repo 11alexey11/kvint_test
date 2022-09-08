@@ -1,9 +1,5 @@
 @import '../../variables/variables.scss';
 
-.container {
-    
-}
-
 .btn {
     padding: 15px;
     border-radius: 5px;
@@ -13,22 +9,6 @@
     box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
     -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
-
-    &.appear {
-        animation: appearance 0.5s;
-        -webkit-animation: appearance 0.5s;
-        -moz-animation: appearance 0.5s;
-        -o-animation: appearance 0.5s;
-    }
-    
-
-    &.disappear {
-        animation: disappearance 0.5s;
-        -webkit-animation: disappearance 0.5s;
-        -moz-animation: disappearance 0.5s;
-        -o-animation: disappearance 0.5s;
-    }
-    
 
     &:hover {
         cursor: pointer;
@@ -46,6 +26,40 @@
         left: 0;
         content: url('../../assets/img/turn_off.svg');
     }
+}
+
+.dialog {
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    padding: 15px 25px;
+    border-radius: 25px;
+    background-color: $green;
+    color: $white;
+    font-size: 20px;
+
+    &__bold {
+        font-weight: 600;
+    }
+}
+
+.appear {
+    animation: appearance 1s;
+    -webkit-animation: appearance 1s;
+    -moz-animation: appearance 1s;
+    -o-animation: appearance 1s;
+}
+
+
+.disappear {
+    animation: disappearance 1s;
+    -webkit-animation: disappearance 1s;
+    -moz-animation: disappearance 1s;
+    -o-animation: disappearance 1s;
 }
 
 @keyframes appearance {
